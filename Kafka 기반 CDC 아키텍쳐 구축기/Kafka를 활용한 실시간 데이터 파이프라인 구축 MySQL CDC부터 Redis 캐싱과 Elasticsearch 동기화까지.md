@@ -278,7 +278,7 @@ FLUSH PRIVILEGES;
     "topics.regex": "mysql\\.mydb\\..*",
     "connection.url": "http://elasticsearch:9200",
     "type.name": "_doc",
-    "key.ignore": "true",a
+    "key.ignore": "true",
     "schema.ignore": "true"
   }
 }
@@ -367,7 +367,6 @@ FLUSH PRIVILEGES;
 >[!NOTE]
 > **ElasticsearchSinkConnector** 와 **debezium.connector** 가 존재해야합니다!
 
----
 ## **4. KafkaConsumer.java (Redis Cache 저장)**
 ```java
 @Slf4j  
@@ -504,7 +503,6 @@ curl -X GET "http://localhost:9200/_cat/indices?v"
 2. `Stack Management > Index Patterns`에서 `mingle.mydb.post` 인덱스 생성
 3. `Discover`에서 데이터 조회 가능
 
----
 ## **6. 결론**
 ##### **✅ MySQL CDC 데이터 흐름**
 1. **MySQL Binlog** → MySQL에서 변경 사항이 발생하면 **Binlog**에 기록됨
