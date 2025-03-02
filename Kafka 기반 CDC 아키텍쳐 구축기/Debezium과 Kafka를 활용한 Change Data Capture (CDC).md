@@ -151,7 +151,7 @@ FLUSH PRIVILEGES;
     "database.port": "3306",
     "database.user": "debezium", //권한 부여받은 계정으로 등록
     "database.password": "dbz",
-    "database.server.id": "184054", // 고유한 정수 값이어야 하며, 다른 MySQL 서버                                          또는 Debezium 인스턴스와 중복되면 안됨
+    "database.server.id": "184054", // 고유한 정수 값이어야함
     "topic.prefix": "mingle", //prefix 가 없으면 등록이안되었음
     "database.include.list": "mydb", //cdc 대상은 mydb 전체
     "schema.history.internal.kafka.bootstrap.servers": "kafka:9092", 
